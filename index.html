@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              body: "#2e2b2b",
+              navLinks: "#bca177",
+              form: "#856a4e",
+              darkBrown: "#62411d",
+            },
+            backgroundImage: {
+              hero: ["url(images/headerBg.jpg)"],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="main.js" defer></script>
+    <title>Humaya</title>
+  </head>
+  <body class="bg-black max-w-[1024px] mx-auto text-white">
+    <header
+      class=" xl:bg-orange-500 flex items-center justify-center min-h-screen bg-hero bg-no-repeat bg-cover bg-center-left"
+    >
+      <nav
+        class="absolute max-w-[1024px] mx-auto top-0 left-0 right-0 bg-gradient-to-b from-yellow-950 via-yellow-800 to-transparent p-4 flex items-center justify-between sm:justify-center"
+      > 
+        <div class="w-full sm:hidden"></div>
+        <a class="w-full z-20 sm:hidden" href="#" ><img
+        src="images/Logos/LogoHumaya100x100.png"
+        class="w-24 mx-auto"
+        alt="Humaya" /></a>      
+        <button
+          class="w-full uppercase hover:opacity-50 transition-all duration-200 ease-in-out z-20 sm:hidden"
+          id="open-menu"
+        >
+          <img
+            src="https://icongr.am/jam/menu.svg?size=60&color=bca177"
+            class="ml-auto"
+            alt="Open Menu"
+            />
+          </button>
+          <button
+            class="hidden w-full uppercase hover:opacity-50 transition-all duration-200 ease-in-out z-20 sm:hidden"
+            id="close-menu"
+          >
+          <img
+            src="https://icongr.am/jam/close.svg?size=60&color=bca177"
+            class="ml-auto"
+            alt="Close Menu"
+          />
+        </button>
+        <ul
+          class="hidden fixed z-10 inset-0 bg-body flex-col justify-center items-center gap-8 text-navLinks text-lg sm:relative sm:flex sm:flex-row sm:bg-transparent sm:text-white sm:text-sm" id="mobile-menu"
+        >
+          <li class="hover:opacity-50 transition-all duration-200 ease-in-out">
+            <a class="" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="hover:opacity-50 transition-all duration-200 ease-in-out">
+            <a class="" href="#">Productos</a>
+          </li>
+          <li class="hidden sm:inline">
+            <a class="" href="#"
+              ><img
+                src="images/Logos/LogoHumaya100x100.png"
+                class=""
+                alt="Humaya"
+            /></a>
+          </li>
+          <li class="hover:opacity-50 transition-all duration-200 ease-in-out">
+            <a class="" href="#">Locales</a>
+          </li>
+          <li class="hover:opacity-50 transition-all duration-200 ease-in-out">
+            <a class="" href="#">Contactos</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="w-[85%] max-w-[400px] mx-auto bg-darkBrown/50 text-white/60 rounded-sm drop-shadow-md p-8 flex flex-col items-center justify-center gap-6 lg:w-1/2 lg:ml-auto lg:mr-8 lg:max-w-[500px] lg:gap-10">
+        <h2 class="font-extralight text-3xl uppercase lg:text-5xl">Dulces del alma</h2>
+        <p class="text-center text-sm leading-relaxed lg:text-xl lg:text-left lg:px-6">
+          Los productos <span class="uppercase text-navLinks font-semibold">Humaya</span> son elaborados desde hace más de 50
+          años fiel a las tradiciones familiares y sabores caseros,
+          acompañándote en los momentos más importantes de la vida.
+        </p>
+        <button class="bg-navLinks/70 py-4 px-12 rounded-full font-semibold text-sm uppercase outline-transparent drop-shadow-md hover:bg-white/75 hover:text-navLinks transition-all duration-200 ease-in-out lg:text-lg">Conocenos</button>
+      </section>
+    </header>
+    <main class="bg-body">
+      <section class="">
+        <header class="p-4 text-navLinks text-center uppercase font-bold lg:text-lg">
+          Productos
+        </header>
+        <section class="space-y-8 sm:space-y-0">
+          <div class="h-[500px] bg-darkBrown/60 flex flex-col drop-shadow-md sm:flex-row sm:h-[350px] sm:drop-shadow-none">
+            <div class="h-[250px] overflow-hidden sm:w-1/2 sm:h-full">
+              <img
+                src="images/Productos/Producto1.png"
+                class="object-cover h-full w-full"
+                alt="Dulce de leche tradicional"
+              />
+            </div>
+            <article class="h-[250px] space-y-6 w-2/3 mx-auto px-4 py-8 sm:flex sm:flex-col sm:justify-center sm:gap-6 sm:space-y-0 sm:w-1/2 sm:h-full">
+              <h3
+                class="text-2xl font-thin text-navLinks uppercase text-center lg:text-3xl"
+              >
+                Dulce de leche tradicional
+              </h3>
+              <p class="px-4 text-xs lg:px-12 lg:text-base">
+                Elaboración artesanal de principio a fin, con un sabor intenso,
+                receta tradicional.
+              </p>
+              <span class="block px-4 text-xs text-navLinks font-semibold lg:px-12 lg:text-base"
+                >Presentación en frasco de vidrio de 580gr.</span
+              >
+              <button
+                class="mx-auto flex items-center outline outline-navLinks px-4 py-1 text-sm uppercase text-navLinks font-semibold hover:opacity-50 transition-all duration-200 ease-in-out lg:text-base"
+              >
+                <img
+                  src="https://icongr.am/jam/plus.svg?size=14&color=bca177"
+                  alt=""
+                /><span class="">Info</span>
+              </button>
+            </article>
+          </div>
+          <div class="h-[500px] bg-darkBrown/60 flex flex-col drop-shadow-md sm:flex-row sm:h-[350px] sm:drop-shadow-none">
+            <div class="h-[250px] overflow-hidden sm:w-1/2 sm:order-2 sm:h-full">
+              <img
+                src="images/Productos/Producto2.png"
+                class="object-cover h-full w-full"
+                alt="Dulce de leche tradicional"
+              />
+            </div>
+            <article class="h-[250px] space-y-6 w-2/3 mx-auto px-4 py-8 sm:flex sm:flex-col sm:order-1 sm:justify-center sm:gap-6 sm:space-y-0 sm:w-1/2 sm:h-full">
+              <h3
+                class="text-2xl font-thin text-navLinks uppercase text-center lg:text-3xl"
+              >
+              Dulce de leche sin azúcar
+              </h3>
+              <p class="px-4 text-xs lg:px-12 lg:text-base">Elaboración artesanal para cuidar tu silueta sin renunciar a
+                nada, endulzado naturalmente con stevia.</p>
+              <span class="block px-4 text-xs text-navLinks font-semibold lg:px-12 lg:text-base"
+                >Presentación en frasco de vidrio de 580gr y 280gr.</span
+              >
+              <button
+                class="mx-auto flex items-center outline outline-navLinks px-4 py-1 text-sm uppercase text-navLinks font-semibold hover:opacity-50 transition-all duration-200 ease-in-out  lg:text-base"
+              >
+                <img
+                  src="https://icongr.am/jam/plus.svg?size=14&color=bca177"
+                  alt=""
+                /><span class="">Info</span>
+              </button>
+            </article>
+          </div>
+          <div class="h-[500px] bg-darkBrown/60 flex flex-col drop-shadow-md sm:flex-row sm:h-[350px] sm:drop-shadow-none">
+            <div class="h-[250px] overflow-hidden sm:w-1/2 sm:h-full">
+              <img
+                src="images/Productos/Producto3.png"
+                class="object-cover h-full w-full"
+                alt="Dulce de leche tradicional"
+              />
+            </div>
+            <article class="h-[250px] space-y-6 w-2/3 mx-auto px-4 py-8 sm:flex sm:flex-col sm:justify-center sm:gap-6 sm:space-y-0 sm:w-1/2 sm:h-full">
+              <h3 class="text-2xl font-thin text-navLinks uppercase text-center lg:text-3xl" >Dulce choconutt</h3>
+              <p class="px-4 text-xs lg:px-12 lg:text-base">Elaboración artesanal para el capricho dulce, combinación de
+                dulce de leche, chocolate y pasta de avellanas. Una delicia
+                única.</p>
+              <span class="block px-4 text-xs text-navLinks font-semibold lg:px-12 lg:text-base"
+                >Presentación en frasco de vidrio de 280gr.</span
+              >
+              <button
+                class="mx-auto flex items-center outline outline-navLinks px-4 py-1 text-sm uppercase text-navLinks font-semibold hover:opacity-50 transition-all duration-200 ease-in-out  lg:text-base"
+              >
+                <img
+                  src="https://icongr.am/jam/plus.svg?size=14&color=bca177"
+                  alt=""
+                /><span class="">Info</span>
+              </button>
+            </article>
+          </div>
+          <div class="h-[500px] bg-navLinks flex flex-col drop-shadow-md sm:flex-row sm:h-[350px] sm:drop-shadow-none">
+            <div class="h-[250px] overflow-hidden sm:flex sm:items-center sm:justify-center sm:w-1/2 sm:h-full sm:order-2">
+              <img
+                src="images/Productos/Producto4.png"
+                class="object-cover h-full w-full sm:h-[300px] sm:w-3/4 sm:mx-auto"
+                alt="Dulce de leche tradicional"
+              />
+            </div>
+            <article class="h-[250px] space-y-6 w-2/3 mx-auto px-4 py-8 sm:px-2 sm:flex sm:order-1 sm:flex-col sm:justify-center sm:gap-6 sm:space-y-0 sm:w-1/2 sm:h-full">
+              <h3 class="text-2xl font-thin text-darkBrown uppercase text-center lg:text-3xl" >Alfajores de maicena</h3>
+              <p class="px-4 text-xs lg:px-12 lg:text-base">Alfajores de dulce con coco rallado, relleno con 2cm de pura
+                dulzura. Pudiendo elegir entre dulce de leche tradicional, light
+                o choconutt.</p>
+              <span class="block px-4 text-xs text-darkBrown font-semibold lg:px-12 lg:text-base"
+                >Presentación en caja de 6 y 12 alfajores.</span
+              >
+              <button
+                class="mx-auto flex items-center outline outline-darkBrown px-4 py-1 text-sm uppercase text-darkBrown font-semibold hover:opacity-50 transition-all duration-200 ease-in-out lg:text-base"
+              >
+                <img
+                  src="https://icongr.am/jam/plus.svg?size=14&color=62411d"
+                  alt=""
+                /><span class="">Info</span>
+              </button>
+            </article>
+          </div>
+        </section>
+      </section>
+      <section class="flex flex-col items-center p-4">
+        <h3 class="font-bold md:text-xl">La mejor calidad para vos</h3>
+        <section class="flex items-center justify-center gap-12 py-6">
+          <div class="flex flex-col items-center gap-2">
+            <div class="drop-shadow-md">
+              <img
+                src="images/Logos/organico.png"
+                class="w-12 md:w-20"
+                alt="100% Orgánico"
+              />
+            </div>
+            <span
+              class="text-navLinks text-center font-thin text-[8px] uppercase md:text-xs"
+              >100%<br />Orgánico</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="drop-shadow-md">
+              <img src="images/Logos/sintacc.png" class="w-12 md:w-20" alt="Sin TACC" />
+            </div>
+            <span
+              class="text-navLinks text-center font-thin text-[8px] uppercase md:text-xs"
+              >Sin<br />Tacc</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-2">
+            <div class="drop-shadow-md">
+              <img
+                src="images/Logos/sinconservantes.png"
+                class="w-12 md:w-20"
+                alt="Sin Conservantes"
+              />
+            </div>
+            <span
+              class="text-navLinks text-center font-thin text-[8px] uppercase md:text-xs"
+              >Sin<br />conservantes</span
+            >
+          </div>
+        </section>
+      </section>
+      <section class="flex flex-col items-center p-6 sm:px-0">
+        <h3 class="font-bold md:text-xl">Contáctanos</h3>
+        <section class="p-4 sm:flex sm:px-0">
+          <div class="hidden w-1/2 sm:block">
+            <img
+              src="images/Productos/formImg.jpg"
+              class="object-cover h-full"
+              alt="Humaya"
+            />
+          </div>
+          <form
+            class="py-4 px-8 bg-white flex flex-col gap-4 text-form text-sm sm:w-1/2 sm:flex sm:flex-col sm:justify-center"
+          >
+            <h3 class="font-semibold">
+              Déjanos tu consulta y nuestro personal se pondrá en contacto a la
+              brevedad:
+            </h3>
+            <label
+              for=""
+              class="flex flex-col items-start gap-1 font-thin uppercase"
+              >Nombre:
+              <input type="text" class="w-full bg-form h-8 outline-none" />
+            </label>
+            <label
+              for=""
+              class="flex flex-col items-start gap-1 font-thin uppercase"
+              >E-mail:
+              <input type="email" class="w-full bg-form h-8 outline-none" />
+            </label>
+            <label
+              for=""
+              class="flex flex-col items-start gap-1 font-thin uppercase"
+              >Consulta:
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="5"
+                class="w-full bg-form h-20 outline-none"
+              ></textarea>
+            </label>
+            <div class="w-full text-center my-4">
+              <button
+                type="submit"
+                class="outline outline-form drop-shadow-sm py-2 px-6 hover:opacity-70 transition-all duration-200 ease-in-out"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="flex flex-col items-center p-4">
+        <h3 class="font-bold md:text-xl">Recetas</h3>
+        <section class="flex flex-col items-center gap-8 p-6 md:flex-row md:justify-between md:px-2 md:gap-4 lg:gap-8">
+          <div
+            class="mx-auto flex flex-col items-center w-[350px] h-[390px] bg-navLinks md:w-[250px] lg:w-[300px]"
+          >
+            <div class="h-[220px] overflow-hidden">
+              <img
+                src="images/Productos/conitos.jpg"
+                class="w-full h-full object-cover"
+                alt="Conitos"
+              />
+            </div>
+            <div class="py-2 px-10 h-[170px] flex flex-col items-center gap-2 md:px-6">
+              <h5
+                class="text-darkBrown text-3xl text-center font-extralight uppercase"
+              >
+                Conitos
+              </h5>
+              <p class="text-sm md:text-[10px] lg:text-[11px]">
+                Una deliciosa opción para acompañar las meriendas, ese antojo de
+                media noche o compartir con amigos.
+              </p>
+              <button
+                class="mt-2 mx-auto outline outline-darkBrown px-4 py-1 text-xs uppercase text-darkBrown font-semibold hover:opacity-70 transition-all duration-200 ease-in-out"
+              >
+                Preparación
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex flex-col items-center w-[350px] h-[390px] bg-navLinks md:w-[250px] lg:w-[300px]"
+          >
+            <div class="h-[220px] overflow-hidden">
+              <img
+                src="images/Productos/pepas.jpg"
+                class="w-full h-full object-cover"
+                alt="Pepas"
+              />
+            </div>
+            <div class="py-2 px-10 h-[170px] flex flex-col items-center gap-2 md:px-6">
+              <h5
+                class="text-darkBrown text-3xl text-center font-extralight uppercase"
+              >
+                Pepas
+              </h5>
+              <p class="text-sm md:text-[10px] lg:text-[11px]">
+                Las galletitas más tiernas y ricas, rellenas de dulce de leche,
+                ideales para el mate y la hora del té.
+              </p>
+              <button
+                class="mt-2 mx-auto outline outline-darkBrown px-4 py-1 text-xs uppercase text-darkBrown font-semibold hover:opacity-70 transition-all duration-200 ease-in-out"
+              >
+                Preparación
+              </button>
+            </div>
+          </div>
+          <div
+            class="mx-auto flex flex-col items-center w-[350px] h-[390px] bg-navLinks md:w-[250px] lg:w-[300px]"
+          >
+            <div class="h-[220px] overflow-hidden">
+              <img
+                src="images/Productos/tortaNutt.jpg"
+                class="w-full h-full object-cover"
+                alt="Torta Nutt"
+              />
+            </div>
+            <div class="py-2 px-10 h-[170px] flex flex-col items-center gap-2 md:px-6">
+              <h5
+                class="text-darkBrown text-3xl text-center font-extralight uppercase"
+              >
+                Torta Nutt
+              </h5>
+              <p class="text-sm md:text-[10px] lg:text-[11px]">
+                La torta de tres capas más sabrosa del mundo, combina una base
+                de vainilla, dulce de leche y cubierta de choconutt.
+              </p>
+              <button
+                class="mt-2 mx-auto outline outline-darkBrown px-4 py-1 text-xs uppercase text-darkBrown font-semibold hover:opacity-70 transition-all duration-200 ease-in-out"
+              >
+                Preparación
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="px-4 py-8 md:flex justify-center items-start gap-8 md:h-[275px] md:overflow-hidden">
+      <section class="h-full hidden md:flex items-center justify-center">
+        <img src="images/Logos/LogoHumaya100x100.png" class="w-32" alt="Humaya" />
+      </section>
+      <section class="hidden h-full flex-col items-start justify-between text-xs p-4 md:text-base md:blockmd:block lg:flex">
+        <h2  class="text-navLinks font-thin uppercase md:text-lg">Menú</h2>
+        <ul class="py-2 space-y-2">
+          <li class="hover:text-navLinks transition-all duration-200 ease-in-out cursor-pointer">Home</li>
+          <li class="hover:text-navLinks transition-all duration-200 ease-in-out cursor-pointer">Productos</li>
+          <li class="hover:text-navLinks transition-all duration-200 ease-in-out cursor-pointer">Locales</li>
+          <li class="hover:text-navLinks transition-all duration-200 ease-in-out cursor-pointer">Contactos</li>
+        </ul>
+      </section>
+      <section class="h-full flex flex-col items-center justify-between text-xs p-4 md:text-base md:block lg:items-start">
+        <h2 class="text-navLinks font-thin uppercase md:text-lg">Navegación</h2>
+        <ul class="py-2 space-y-2 flex flex-col items-center  justify-between md:items-start">
+          <li
+            class="hover:text-navLinks transition-all duration-200 ease-in-out cursor-pointer"
+          >
+            Preguntas frecuentes
+          </li>
+          <li
+            class="hover:text-navLinks transition-all duration-200 ease-in-out cursor-pointer"
+          >
+            Distribuidores
+          </li>
+          <li
+            class="hover:text-navLinks transition-all duration-200 ease-in-out cursor-pointer"
+          >
+            Prensa
+          </li>
+          <li
+            class="hover:text-navLinks transition-all duration-200 ease-in-out cursor-pointer"
+          >
+            Recetas exclusivas
+          </li>
+        </ul>
+      </section>
+      <section class="h-full flex flex-col items-center justify-between text-xs p-4 md:text-base">
+        <h2 class="text-navLinks font-thin uppercase md:text-lg">Redes</h2>
+        <ul class="p-4 flex items-center justify-center gap-4 md:flex-col lg:p-0 lg:justify-between">
+          <li>
+            <img
+              src="https://icongr.am/fontawesome/instagram.svg?size=32&color=ffffff"
+              class="hover:opacity-50 transition-all duration-200 ease-in-out cursor-pointer"
+              alt="Instagram"
+            />
+          </li>
+          <li>
+            <img
+              src="https://icongr.am/fontawesome/facebook.svg?size=32&color=ffffff"
+              class="hover:opacity-50 transition-all duration-200 ease-in-out cursor-pointer"
+              alt="Facebook"
+            />
+          </li>
+          <li>
+            <img
+              src="https://icongr.am/fontawesome/twitter.svg?size=32&color=ffffff"
+              class="hover:opacity-50 transition-all duration-200 ease-in-out cursor-pointer"
+              alt="Twitter"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="h-full hidden flex-col items-start justify-between text-xs p-4 md:text-base md:block lg:flex">
+        <h2 class="text-navLinks font-thin text-left uppercase md:text-lg">Ubicación</h2>
+        <div class="flex flex-col items-start justify-end gap-3">
+          <p class="text-xs">Montes de Oca 2356, CABA</p>
+          <div class="w-44 h-28 overflow-hidden">
+            <img src="images/mapa.jpg" class="object-cover w-full h-full" alt="Monted de Oca 2356, CABA">
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
